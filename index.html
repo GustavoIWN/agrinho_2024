@@ -20,7 +20,7 @@
     </style>
 </head>
 <body>
-    <!-- Música de fundo -->
+    <!-- Som da colheitadera feita por Erick -->
     <audio id="background-music" loop>
         <source src="musica.mp3" type="audio/mp3">
     </audio>
@@ -42,12 +42,12 @@
         <button id="play-music" class="audio-control">Tocar som</button>
     </div>
     <script>
-        // Código para controlar o áudio
+        // Código do controle do áudio
         document.addEventListener('DOMContentLoaded', function() {
             const audio = document.getElementById('background-music');
-            audio.volume = 1; // Ajuste o volume conforme necessário
+            audio.volume = 1; // Ajuste do volume do áudio se for nescessário
             const playButton = document.getElementById('play-music');
-            playButton.disabled = false; // Certifique-se de que o botão está habilitado
+            playButton.disabled = false; // Identificação de que o botão está habilitado
             playButton.addEventListener('click', () => {
                 audio.play();
             });
